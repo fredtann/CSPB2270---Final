@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-perlin-noise",
+            "type": "shell",
+            "command": "cl.exe",
+            "args": [
+                "/std:c++17",
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/Fe:${fileDirname}\\my_program.exe",
+                "${file}",
+                "${fileDirname}\\PerlinNoise.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
