@@ -5,7 +5,7 @@
 #include <random>
 #include <chrono>
 
-// --- Perlin Noise Class Implementation (reused from previous success) ---
+// --- Perlin Noise Class Implementation ---
 class PerlinNoise {
 private:
     std::vector<int> p;
